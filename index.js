@@ -6,9 +6,10 @@ function createTask() {
 }
 
 function clearList() {
-  var list = document.getElementById("listContent");
+  const list = document.getElementById("listContent");
   if (list.hasChildNodes()) {
-    list.removeChild(list.children[0]);
-    console.log(list.children.length);
+    while (list.hasChildNodes) {
+      list.removeChild(list.lastChild);
+    }
   }
 }

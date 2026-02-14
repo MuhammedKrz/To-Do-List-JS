@@ -1,5 +1,5 @@
 function createTask() {
-  var list = document.getElementById("listContent");
+  const list = document.getElementById("listContent");
   var entry = document.createElement("li");
   entry.appendChild(document.createTextNode("listContent"));
   list.appendChild(entry);
@@ -11,5 +11,12 @@ function clearList() {
     while (list.hasChildNodes && list.lastChild !== null) {
       list.removeChild(list.lastChild);
     }
+  }
+}
+
+function deleteLastElement() {
+  const list = document.getElementById("listContent");
+  if (list.hasChildNodes()) {
+    list.removeChild(list.lastChild);
   }
 }

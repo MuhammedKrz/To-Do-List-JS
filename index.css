@@ -13,6 +13,6 @@ ul {
 ul li {
   border-style: solid;
   border-radius: 10px;
-  border-width: 1;
-  margin-top: 10;
+  padding: 7px;
+  margin-top: 10px;
 }

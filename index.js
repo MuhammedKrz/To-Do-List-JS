@@ -1,8 +1,12 @@
 function createTask() {
   const list = document.getElementById("listContent");
   var entry = document.createElement("li");
-  entry.appendChild(document.createTextNode("listContent"));
-  list.appendChild(entry);
+  var textInput = document.getElementById("textInput");
+  entry.appendChild(document.createTextNode(textInput.value));
+  if (textInput.value !== "") {
+    list.appendChild(entry);
+  }
+  textInput.value = "";
 }
 
 function clearList() {
